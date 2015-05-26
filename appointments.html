@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Appointments</title></title>
+        <!--    <link rel="stylesheet" href="css/normalize.css">-->
+          	<link rel="stylesheet" href="appointments.css">
+        </head>
+        <body>
+        <header class="" name="">
+          <img src ="" alt="logo" class="logo" name="logo">
+          <h1 class="title" name="title">Appointments</h1>
+          <img src ="plus sign font" alt="plus-icon" class="plus-icon" name="plus-icon">
+        </header>
+          <div class="list-view" name="list-view">
+            <form>
+              <input class="search" name="search" placeholder="search"></input>
+              <input type="submit" class="searchbutton" name="searchbutton">
+            </form>
+
+
+            <ul class="date-container" name="date-container">
+              <li class="day" name="day">
+                <ul class="events" name="events">
+
+                </ul>
+              </li>
+            </ul>
+
+
+
+          </div>
+
+          <div class="event-view" name="event-view">
+            <form class="event-form" name="event-form">
+              <h2 class="event-details" name="event-details">Event Details</h2>
+              <input type="date" class="date" name="date">
+              <input type="time" class="time" name="time">
+              <input type="text" class="description" name="description">
+              <input type="address" class="address" name="address">
+              <div id="map-canvas" class="map" name="map"></div>
+              <input type="submit">
+            </form>
+          </div>
+
+
+
+        <script src="jquery-2.1.4.min.js"></script>
+        <script src="appointments.js"></script>
+        </body>
