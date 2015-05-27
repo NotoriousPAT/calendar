@@ -1,51 +1,70 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Appointments</title></title>
-        <!--    <link rel="stylesheet" href="css/normalize.css">-->
-          	<link rel="stylesheet" href="appointments.css">
-        </head>
-        <body>
-        <header class="" name="">
-          <img src ="" alt="logo" class="logo" name="logo">
-          <h1 class="title" name="title">Appointments</h1>
-          <img src ="plus sign font" alt="plus-icon" class="plus-icon" name="plus-icon">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Appointments</title>
+        <link rel="stylesheet" href="meyer_css_reset.css">
+      	<link rel="stylesheet" href="appointment.css">
+    </head>
+    <body>
+        <header>
+            <img src ="logo.svg" alt="logo" class="logo" name="logo">
+            <h1 class="title" name="title">Appointments</h1>
+            <img src ="plus sign font" alt="plus-icon" class="plus-icon" name="plus-icon">
         </header>
-          <div class="list-view" name="list-view">
-            <form>
-              <input class="search" name="search" placeholder="search"></input>
-              <input type="submit" class="searchbutton" name="searchbutton">
+
+
+        <div class="home-page" name="home-page">
+            <form class="search-form" name="search-form">
+                <input type="search" class="search" name="search" placeholder="Search">
+                <input type="submit" class="search-button" name="search-button">
             </form>
-
-
-            <ul class="date-container" name="date-container">
-              <li class="day" name="day">
-                <ul class="events" name="events">
-
+            <div class="calendar" placeholder="calendar placeholder">calendar placeholder
+            </div>
+            <div class="current-day" name="current-day">Friday, May 29, 2015</div>
+                <ul class="date-container" name="date-container">
+                    <li class="day" name="day">
+                        <ul >
+                          <li class="indiv-event" name="indiv-event">
+                            event placeholder js
+                          </li>
+                          <li class="indiv-event" name="indiv-event">
+                            event placeholder js
+                          </li>
+                        </ul>
+                    </li>
                 </ul>
-              </li>
-            </ul>
+            </div>
 
 
+        <div class="page2"name="page2">
+            <h2 class="event-details" name="event-details">Event Details</h2>
+            <input type="submit" class="form-submit" name="form-submit">
 
-          </div>
+            <div class="scroll-hide" name="scroll-hide">
 
-          <div class="event-view" name="event-view">
-            <form class="event-form" name="event-form">
-              <h2 class="event-details" name="event-details">Event Details</h2>
-              <input type="date" class="date" name="date">
-              <input type="time" class="time" name="time">
-              <input type="text" class="description" name="description">
-              <input type="address" class="address" name="address">
-              <div id="map-canvas" class="map" name="map"></div>
-              <input type="submit">
-            </form>
-          </div>
+            </div>
+                <form class="event-form" name="event-form">
+                    <input type="text" class="description" name="description" placeholder="Description">
+                    <input type="datetime" class="datefrom" name="datefrom" placeholder="Beginning Date and Time">
+                    <input type="datetime" class="dateto" name="dateto" placeholder="Ending Date and Time">
+                    <input type="reminder" class="reminder" name="reminder" placeholder="Reminder">
+                    <input type="text" class="notes" name="notes" placeholder="notes">
+                    <fieldset>
+                        <legend>Address</legend>
+                        <label for="streetaddress">Address</label><input type="text" class="streetaddress" name="streetaddress" />
+                        <label for="city">City</label><input type="text" class="city" name="city" />
+                        <label for="state">State</label><input type="text" id="state" name="state" />
+                        <label for="zip" >Zip Code</label><input type="text" class="zip" name="zip" />
+                    </fieldset>
+                    <input type="text" class="web-address" name="web-address" placeholder="website address">
+                    <div id="map-canvas" class="map" name="map">google map</div>
+                </form>
+            </div>
+      </div>
 
 
-
-        <script src="jquery-2.1.4.min.js"></script>
-        <script src="appointments.js"></script>
-        </body>
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="appointments.js"></script>
+    </body>
