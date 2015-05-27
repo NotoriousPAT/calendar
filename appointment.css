@@ -1,0 +1,166 @@
+header{
+  background-color:#13a085;
+  position:fixed;
+  width:320px;
+  height:80px;
+  top:0;
+  left:0;
+  right:0;
+  text-align: center;
+}
+
+
+.logo{
+  height:60px;
+  width: 60px;
+  padding-left: 10px;
+  padding-top: 10px;
+  float: left;
+}
+
+
+.title{
+  color: white;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-right: 60px;
+}
+
+
+.plus-icon{
+  height:40px;
+  width:40px;
+  float: right;
+  padding-right: 10px;
+}
+
+
+.form{
+  width:320px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: purple;
+}
+
+
+.search{
+  margin-top: 85px;
+  width: 200px;
+  font-size: 18px;
+  padding: 6px 8px;
+  margin-bottom: 5px;
+  height: 32px;
+}
+
+
+.search-button{
+  background-color: purple;
+  border-radius: 5px;
+  color: white;
+  width: 60px;
+  height: 32px;
+  padding:4px 8px;
+  margin: 2px;
+}
+
+
+.map,
+.calendar{
+  width:290px;
+  height: 290px;
+  margin: 4px 10px;
+  border-style: solid;
+  border-color: black;
+  border-width: medium;
+}
+
+
+.current-day{
+  width: 320px;
+  height: 24px;
+  background-color: #8a9eba;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 6px;
+}
+
+
+.indiv-event{
+  background-color: #d0d6df;
+  padding: 4px 10px;
+  width: 300px;
+  height:50px;
+  margin-bottom: 2px;
+}
+
+
+.page2{
+  height: auto;
+  width: 320px;
+}
+
+.event-details{
+  width: 320px;
+  height:32px;
+  background-color:#13a085;
+  color: white;
+  /*position:fixed;*/
+  left:0;
+  right:0;
+  padding-top: 10px;
+  text-align: center;
+}
+
+
+/*.scroll-hide{
+  z-index: 500;
+  width: 320px;
+  top: 42px;
+  height: auto;
+  background-color: red;
+}*/
+
+.event-form{
+  width: 320px;
+  height:auto;
+  left:0;
+  right:0;
+  padding-top: 10px;
+  overflow-y: auto;
+  /*overflow-x: hidden;*/
+  background-color: #8a9eba;
+}
+
+
+.datefrom,
+.dateto,
+.reminder,
+.description,
+.web-address{
+  width:270px;
+  height: 30px;
+  padding: 4px 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 4px;
+}
+
+
+.reminder,
+.description{
+  margin-bottom: 15px;
+}
+
+
+.notes{
+  /*figure out how to make this box expand and contract*/
+  width: 270px;
+  height: 30px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 4px 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
