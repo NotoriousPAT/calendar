@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Appointments</title>
-        <link rel="stylesheet" href="meyer_css_reset.css">
-      	<link rel="stylesheet" href="appointment.css">
+        <link rel="stylesheet" href="css/meyer_css_reset.css">
+      	<link rel="stylesheet" href="css/appointment.css">
     </head>
     <body>
         <header>
@@ -15,7 +15,7 @@
         </header>
 
 
-        <div class="home-page" name="home-page">
+        <div id="home-page" class="home-page" name="home-page">
             <form class="search-form" name="search-form">
                 <input type="search" class="search" name="search" placeholder="Search">
                 <input type="submit" class="search-button" name="search-button">
@@ -44,7 +44,7 @@
 
             <div class="scroll-hide" name="scroll-hide">
 
-            </div>
+            </div id="home-page">
                 <form class="event-form" name="event-form">
                     <input type="text" class="description" name="description" placeholder="Description">
                     <input type="datetime" class="datefrom" name="datefrom" placeholder="Beginning Date and Time">
@@ -56,15 +56,16 @@
                         <label for="streetaddress">Address</label><input type="text" class="streetaddress" name="streetaddress" />
                         <label for="city">City</label><input type="text" class="city" name="city" />
                         <label for="state">State</label><input type="text" id="state" name="state" />
-                        <label for="zip" >Zip Code</label><input type="text" class="zip" name="zip" />
+                        <label for="zip" >Zip Code</label><input type="text" class="zip" name="zip"/>
                     </fieldset>
                     <input type="text" class="web-address" name="web-address" placeholder="website address">
                     <div id="map-canvas" class="map" name="map">google map</div>
                 </form>
             </div>
       </div>
-
-
-    <script src="jquery-2.1.4.min.js"></script>
-    <script src="appointments.js"></script>
+    <script src="js/backbone-min.js/index.js"></script>
+    <script src="js/.bower.json/index.js"></script>
+    <script src="js/jquery-2.1.4.min/index.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/appointments.js"></script>
     </body>
