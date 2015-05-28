@@ -1,9 +1,8 @@
-app.Event = function (description, datefrom, dateto, reminder) {
 
+app.Event = function (spec) {
   spec = spec || {};
 
-  this.description = description;
-  this.datefrom = datefrom;
-  this.dateto = dateto;
-  this.reminder = reminder;
+  this.id = spec.id;
+  this.name = spec.name;
+  this.email = spec.email;
 };

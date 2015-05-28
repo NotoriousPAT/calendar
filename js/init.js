@@ -4,8 +4,8 @@ $(function () {
   'use strict';
 
   // Initialize application properties
-  app.events = new app.ObjectStore();
+  app.events = new app.ObjectStore('events', localStorage);
 
-  // Kick off our initial route
-  Backbone.history.loadUrl();
+  // Tell backbone to process the current route
+  Backbone.history.start();
 });
