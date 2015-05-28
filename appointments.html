@@ -8,10 +8,14 @@
       	<link rel="stylesheet" href="css/appointment.css">
     </head>
     <body>
+      <main class="main-content">
+       </main>
+
+      <script id="event-edit" type="text/html">
         <header>
             <img src ="logo.svg" alt="logo" class="logo" name="logo">
             <h1 class="title" name="title">Appointments</h1>
-            <img src ="plus sign font" alt="plus-icon" class="plus-icon" name="plus-icon">
+            <a class="secondary-action page-action" href="#events">&larr;</a>
         </header>
 
 
@@ -26,12 +30,12 @@
                 <ul class="date-container" name="date-container">
                     <li class="day" name="day">
                         <ul >
-                          <li class="indiv-event" name="indiv-event">
-                            event placeholder js
+                          <li class="description" name="description" value="<%- m.description %>">
                           </li>
-                          <li class="indiv-event" name="indiv-event">
-                            event placeholder js
+                          <li class="datefrom" name="datefrom" value="<%- m.datefrom %>" >
                           </li>
+                      <li class="dateto" name="dateto" value="<%- m.dateto %>">
+                      </li>
                         </ul>
                     </li>
                 </ul>
@@ -61,6 +65,7 @@
                     <input type="text" class="web-address" name="web-address" placeholder="website address">
                     <div id="map-canvas" class="map" name="map">google map</div>
                 </form>
+              </script>
             </div>
       </div>
     <script src="js/backbone-min.js/index.js"></script>
@@ -68,4 +73,13 @@
     <script src="js/jquery-2.1.4.min/index.js"></script>
     <script src="js/app.js"></script>
     <script src="js/appointments.js"></script>
+    <script src="js/event-controller.js"></script>
+    <script src="js/event-edit-controller.js"></script>
+    <script src="js/event-new-controller"></script>
+    <script src="js/event.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/object_store.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/show.js"></script>
+    <script src="js/underscore-min.js"></script>
     </body>
