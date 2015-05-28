@@ -28,6 +28,7 @@ app.router.route('events/:id', function (id) {
   $('.delete-event').click(function () {
     app.users.remove(id);
     app.goto('events');
+
   });
 
 });

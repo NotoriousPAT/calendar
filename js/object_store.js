@@ -40,5 +40,6 @@ app.ObjectStore.prototype = {
 
   save: function () {
     this.storage.setItem(this.key, JSON.stringify(this.all));
-  }
+
+}
 };

@@ -1,4 +1,5 @@
 app.Event = function (description, datefrom, dateto, reminder) {
+
   spec = spec || {};
 
   this.description = description;

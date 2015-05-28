@@ -12,6 +12,7 @@ app.router.route('events/new', function () {
     app.events.add(new app.Event(app.serializeForm(this)));
 
     app.goto('events');
+
   });
 
 });
